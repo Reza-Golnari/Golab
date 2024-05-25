@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Yekan-Light';
+    src: url("/fonts/yekan-bakh/ttf/yekanbakh-300.ttf") format("truetype");
+    src: url("/fonts/yekan-bakh/woff2/yekanbakh-300.woff2") format("woff");
+}
+
+@font-face {
+    font-family: 'Yekan-Regular';
+    src: url("/fonts/yekan-bakh/ttf/yekanbakh-400.ttf") format("truetype");
+    src: url("/fonts/yekan-bakh/woff2/yekanbakh-400.woff2") format("woff");
+}
+
+@font-face {
+    font-family: 'Yekan-Medium';
+    src: url("/fonts/yekan-bakh/ttf/yekanbakh-500.ttf") format("truetype");
+    src: url("/fonts/yekan-bakh/woff2/yekanbakh-500.woff2") format("woff");
+}
+
+@font-face {
+    font-family: 'Yekan-Semibold';
+    src: url("/fonts/yekan-bakh/ttf/yekanbakh-700.ttf") format("truetype");
+    src: url("/fonts/yekan-bakh/woff2/yekanbakh-700.woff2") format("woff");
+}
+
+@font-face {
+    font-family: 'Yekan-Bold';
+    src: url("/fonts/yekan-bakh/ttf/yekanbakh-900.ttf") format("truetype");
+    src: url("/fonts/yekan-bakh/woff2/yekanbakh-900.woff2") format("woff");
+}
+
+@font-face {
+    font-family: 'Yekan-FD';
+    src: url("/fonts/yekan-bakh/YekanFD.ttf") format("truetype");
+}
