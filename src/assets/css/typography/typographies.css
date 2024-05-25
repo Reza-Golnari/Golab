@@ -1,0 +1,75 @@
+@import url(@/assets/css/typography/fonts.css);
+
+.persian-number{
+    font-family: "Yekan-FD" , sans-serif;
+}
+
+/* headings types */
+.heading-h1{
+    font-family: "Yekan-Bold" , sans-serif;
+    font-size: 32px;
+    color: #43454D;
+}
+
+.heading-h2{
+    font-family: "Yekan-Semibold" , sans-serif;
+    font-size: 28px;
+    color: #43454D;
+}
+
+.heading-h3{
+    font-family: "Yekan-Medium" , sans-serif;
+    font-size: 24px;
+    color: #43454D;
+}
+
+.heading-h4{
+    font-family: "Yekan-Medium" , sans-serif;
+    font-size: 20px;
+    color: #43454D;
+}
+
+.heading-h5{
+    font-family: "Yekan-Medium" , sans-serif;
+    font-size: 18px;
+    color: #43454D;
+}
+
+/* body types */
+
+.body-b1{
+    font-family: "Yekan-Medium" , sans-serif;
+    font-size: 16px;
+    color: #43454D;
+}
+
+.body-b1-semiBold{
+    font-family: "Yekan-Semibold" , sans-serif;
+    font-size: 16px;
+    color: #43454D;
+}
+
+.body-b1-light{
+    font-family: "Yekan-Regular" , sans-serif;
+    font-size: 16px;
+    color: #43454D;
+}
+
+.body-b2{
+    font-family: "Yekan-Regular" , sans-serif;
+    font-size: 16px;
+    color: #43454D;
+}
+
+.body-b3{
+    font-family: "Yekan-Regular" , sans-serif;
+    font-size: 14px;
+    color: #43454D80;
+}
+
+.body-b4{
+    font-family: "Yekan-Light" , sans-serif;
+    font-size: 12px;
+    color: #fff;
+}
+
