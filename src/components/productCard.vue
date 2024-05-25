@@ -1,19 +1,23 @@
 <template>
   <v-card
-      class="mx-auto bg-background"
+      class="mx-auto bg-surface"
       max-width="344"
   >
-    <v-img
-        height="200px"
-        :src="image"
-        cover
-    />
+    <router-link :to="`/product/${productId}`">
+      <v-img
+          height="200px"
+          :src="image"
+          cover
+      />
+    </router-link>
 
-    <v-card-title class="heading-h2 text-end">
-      {{title}}
+    <v-card-title>
+      <router-link :to="`/product/${productId}`" class="text-decoration-none heading-h2 ">
+        {{title}}
+      </router-link>
     </v-card-title>
 
-    <v-card-subtitle class="heading-h5 text-end">
+    <v-card-subtitle class="heading-h5">
       قیمت : {{price}}
     </v-card-subtitle>
 
@@ -25,6 +29,7 @@
       <v-spacer/>
 
       <v-btn
+          color="secondaryDark"
           :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'"
           @click="show = !show"
       />
@@ -34,7 +39,7 @@
       <div v-show="show">
         <v-divider/>
 
-        <v-card-text class="text-end body-b1">
+        <v-card-text class="body-b1">
           {{caption}}
         </v-card-text>
       </div>
