@@ -17,7 +17,7 @@
       </v-main>
     </v-layout>
     <v-row class="py-5" dir="rtl">
-      <v-col cols="12" md="6" lg="4" v-for="card in 20" >
+      <v-col cols="12" md="6" lg="4" v-for="product in productsStore.products" >
         <ProductCard image="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" :productId="card" :title="`شماره ${card}`" price="3000" caption="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است" />
       </v-col>
     </v-row>
@@ -38,8 +38,6 @@ import {useProductsStore} from "@/stores/productsStore";
 const productsStore = useProductsStore()
 
 onMounted(()=> productsStore.fetchProducts());
-
-const posts = ref([])
 </script>
 
 <style scoped>
