@@ -18,7 +18,7 @@
     </v-layout>
     <v-row class="py-5" dir="rtl">
       <v-col cols="12" md="6" lg="4" v-for="product in productsStore.products" >
-        <ProductCard image="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" :productId="card" :title="`شماره ${card}`" price="3000" caption="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است" />
+        <ProductCard :image="product.src" :productId="product.id" :title="product.title" :price="product.price" :caption="product.caption" />
       </v-col>
     </v-row>
     <div class="bg-background pa-2 d-flex align-center justify-center">

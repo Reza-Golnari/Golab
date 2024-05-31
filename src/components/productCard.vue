@@ -1,13 +1,15 @@
 <template>
   <v-card
-      class="mx-auto bg-surface"
+      class="mx-auto bg-surface card"
       max-width="344"
   >
     <router-link :to="`/product/${productId}`">
       <v-img
-          height="200px"
+          height="300px"
+          aspect-ratio="1"
           :src="image"
           cover
+          class="cover"
       />
     </router-link>
 
@@ -60,3 +62,15 @@ defineProps({
 
 const show : Ref<boolean> = ref(false);
 </script>
+
+<style scoped>
+.cover{
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.card{
+  border-top-left-radius: 50px;
+  box-shadow: 0 3px 15px rgba(0 , 0 , 0 , .2);
+}
+</style>
