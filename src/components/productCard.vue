@@ -73,4 +73,8 @@ const show : Ref<boolean> = ref(false);
   border-top-left-radius: 50px;
   box-shadow: 0 3px 15px rgba(0 , 0 , 0 , .2);
 }
+
+.card:hover{
+  box-shadow: 0 3px 18px rgba(0 , 0 , 0 , .4);
+}
 </style>

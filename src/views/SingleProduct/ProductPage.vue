@@ -15,7 +15,21 @@
 </template>
 
 <script setup lang="ts">
+import {ref , onMounted , type Ref} from "vue";
+import {useProductsStore , IProduct} from "@/stores/productsStore";
+import {useRoute , useRouter} from "vue-router";
 
+const productStore = useProductsStore();
+const router = useRouter();
+const route = useRoute();
+const targetProduct : Ref<IProduct | null> = ref(null)
+
+onMounted(()=>{
+  if(productStore.products.length) router.push('/')
+  const selectedProduct = productStore.products.find(product => product.id === +route.params.id);
+  if(selectedProduct) targetProduct.value = selectedProduct
+  else router.push('/');
+})
 </script>
 
 <style scoped>
