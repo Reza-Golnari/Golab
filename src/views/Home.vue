@@ -31,7 +31,15 @@
 </template>
 
 <script setup lang="ts">
+import {onMounted} from 'vue';
 import ProductCard from "@/components/productCard.vue";
+import {useProductsStore} from "@/stores/productsStore";
+
+const productsStore = useProductsStore()
+
+onMounted(()=> productsStore.fetchProducts());
+
+const posts = ref([])
 </script>
 
 <style scoped>

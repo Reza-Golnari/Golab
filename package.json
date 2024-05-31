@@ -11,6 +11,7 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
+    "axios": "^1.7.2",
     "pinia": "^2.1.7",
     "vue": "^3.3.10",
     "vue-router": "^4.2.5",
@@ -19,7 +20,7 @@
   "devDependencies": {
     "@mdi/font": "^7.4.47",
     "@tsconfig/node18": "^18.2.2",
-    "@types/node": "^18.19.2",
+    "@types/node": "^18.19.33",
     "@vitejs/plugin-vue": "^4.5.1",
     "@vue/tsconfig": "^0.4.0",
     "npm-run-all2": "^6.1.1",
