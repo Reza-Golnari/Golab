@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen bg-surface">
+  <div class="bg-surface" style="min-height: 100vh">
     <router-view />
   </div>
 </template>
