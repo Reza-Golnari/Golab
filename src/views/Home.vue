@@ -10,13 +10,13 @@
         <div class="d-flex flex-column align-center justify-center text-center ga-3" style="max-width: 600px">
           <h1 class="heading-h1 text-primary">گلاب افتخار</h1>
           <h4 class="heading-h4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</h4>
-          <v-btn color="primary" class="header-btn">
+          <v-btn color="primary" class="header-btn" to="#products">
             <p class="heading-h5 pt-1 px-6 text-white"> ادامه</p>
           </v-btn>
         </div>
       </v-main>
     </v-layout>
-    <v-row class="py-5" dir="rtl">
+    <v-row class="py-5" dir="rtl" id="products">
       <v-col cols="12" md="6" lg="4" v-for="product in productsStore.products" >
         <ProductCard :image="product.src" :productId="product.id" :title="product.title" :price="product.price" :caption="product.caption" />
       </v-col>
