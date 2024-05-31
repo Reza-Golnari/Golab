@@ -9,6 +9,7 @@
       <v-card-subtitle class="w-100 text-end body-b1">
         قیمت: 3000
       </v-card-subtitle>
+      <router-link to="/" class="body-b1 text-end w-100">صفحه اصلی</router-link>
     </v-card>
   </div>
 </template>
